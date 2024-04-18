@@ -26,7 +26,7 @@ class Shop:
                 * self.shop_products[product]
             )
             total_amount += total_for_product
-            if str(total_for_product)[-2:] == ".0":
+            if total_for_product == int(total_for_product):
                 total_for_product = int(total_for_product)
             out += (f"{products_needed[product]} {product}s "
                     f"for {total_for_product} dollars\n")
